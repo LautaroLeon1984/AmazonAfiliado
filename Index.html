@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Amazon Afiliados</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Helvetica', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #0073e6; /* Azul para ventas */
+            color: white;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        /* Contenedor de los recuadros */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 20px;
+        }
+
+        /* Recuadros estándar */
+        .box {
+            width: calc(50% - 10px); /* Dos recuadros por fila con espacio entre ellos */
+            background-color: #fff;
+            margin-bottom: 20px;
+            padding: 20px;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        /* Recuadro más ancho cada dos filas */
+        .box-large {
+            width: calc(100% - 10px);
+            margin-bottom: 20px;
+        }
+
+        .box:hover {
+            transform: scale(1.05);
+        }
+
+        /* Enlaces dentro de los recuadros */
+        .box a {
+            text-decoration: none;
+            color: #0073e6;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        /* Responsive para pantallas pequeñas */
+        @media (max-width: 768px) {
+            .box, .box-large {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Enlaces de Afiliados Amazon</h1>
+</header>
+
+<div class="container">
+    <!-- Primera fila de 2 recuadros -->
+    <div class="box">
+        <a href="https://www.amazon.com/tu-link-de-afiliado">Producto 1</a>
+    </div>
+    <div class="box">
+        <a href="https://www.amazon.com/tu-link-de-afiliado">Producto 2</a>
+    </div>
+
+    <!-- Relleno más ancho (fila completa) -->
+    <div class="box-large">
+        <a href="https://www.amazon.com/tu-link-de-afiliado">Producto Destacado</a>
+    </div>
+
+    <!-- Segunda fila de 2 recuadros -->
+    <div class="box">
+        <a href="https://www.amazon.com/tu-link-de-afiliado">Producto 3</a>
+    </div>
+    <div class="box">
+        <a href="https://www.amazon.com/tu-link-de-afiliado">Producto 4</a>
+    </div>
+
+    <!-- Otro recuadro ancho -->
+    <div class="box-large">
+        <a href="https://www.amazon.com/tu-link-de-afiliado">Producto Especial</a>
+    </div>
+</div>
+
+</body>
+</html>
