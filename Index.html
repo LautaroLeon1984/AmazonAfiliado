@@ -41,6 +41,9 @@
             padding: 20px;
             box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         /* Recuadro más ancho cada dos filas */
@@ -59,6 +62,14 @@
             color: #0073e6;
             font-weight: bold;
             font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        /* Imagen de producto */
+        .box img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
         }
 
         /* Responsive para pantallas pequeñas */
@@ -78,27 +89,33 @@
 <div class="container">
     <!-- Primera fila de 2 recuadros -->
     <div class="box">
+        <img src="https://via.placeholder.com/200x200" alt="Producto 1">
         <a href="https://amzn.to/4gfcWNR">Producto 1</a>
     </div>
     <div class="box">
+        <img src="https://via.placeholder.com/200x200" alt="Producto 2">
         <a href="https://amzn.to/3MYJTkp">Producto 2</a>
     </div>
 
     <!-- Relleno más ancho (fila completa) -->
     <div class="box-large">
+        <img src="https://via.placeholder.com/400x200" alt="Producto Destacado">
         <a href="https://amzn.to/3Zk2zm0">Producto Destacado</a>
     </div>
 
     <!-- Segunda fila de 2 recuadros -->
     <div class="box">
+        <img src="https://via.placeholder.com/200x200" alt="Producto 3">
         <a href="https://amzn.to/3MDJ8Nh">Producto 3</a>
     </div>
     <div class="box">
+        <img src="https://via.placeholder.com/200x200" alt="Producto 4">
         <a href="https://amzn.to/3XADFNn">Producto 4</a>
     </div>
 
     <!-- Otro recuadro ancho -->
     <div class="box-large">
+        <img src="https://via.placeholder.com/400x200" alt="Producto Especial">
         <a href="https://amzn.to/3XkziVv">Producto Especial</a>
     </div>
 </div>
